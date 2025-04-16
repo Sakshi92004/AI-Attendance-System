@@ -15,7 +15,7 @@ known_face_names = []
 face_dir = "known_faces"
 
 for filename in os.listdir(face_dir):
-    if filename.endswith("image.jpg"):
+    if filename.endswith("sakshi.jpg"):
         image = face_recognition.load_image_file(f"{face_dir}/{filename}")
         encoding = face_recognition.face_encodings(image)[0]
         known_face_encodings.append(encoding)
